@@ -15,8 +15,10 @@ class Graph2{
 public:
 
     int quantidade_nodes;
-    bool matriz_de_adjacencia[quantidade_nodes][quantidade_nodes];     
+    vector<vector<bool>> matriz_de_adjacencia;
 
-    static void print(Graph1 grafo);
+    static void adiciona_arestas(Graph2& grafo, int tamanho);//adiciona arestas entre todos os nodes do grafo
+    static void print(Graph2 grafo);
+    
 
 };
