@@ -12,10 +12,13 @@ using namespace std;
 
 //Nessa representação o grafo está representado como uma COLEÇÃO DE LISTA DE ADJACÊNCIA
 class Graph1{
-public:
+private:
 
     //na posição i do vector de vector se encontra a lista de adjacência do vértice i
     vector<vector<int>> lista_de_adjacencia;
+    vector<vector<pair<int,int>>> lista_de_adjacencia_ponderada;
+
+public:    
 
     static void print(Graph1 grafo);
 
